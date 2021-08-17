@@ -46,6 +46,20 @@
 
   <body>
     <div class="container">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <select class="navigationFilter">
+            <option value="New">Name</option>
+            <option value="Username">Username</option>
+            <option value="e-mail">E-mail</option>
+          </select>
+        </div>
+        <input
+          type="text"
+          class="form-control searchField"
+          aria-label="Text input with dropdown button"
+        />
+      </div>
       <div class="row align-items-center justify-content-center">
         <ul class="list-group user-list"></ul>
       </div>
