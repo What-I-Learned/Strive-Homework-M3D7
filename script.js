@@ -1,5 +1,13 @@
-window.onload = () => {};
-
-// Ex1) Get and display, using async / await, the users from: https://jsonplaceholder.typicode.com/users
-
-async function getUsers(url) {}
+window.onload = async () => {
+    try {
+      const response = await fetch(
+        `https://jsonplaceholder.typicode.com/users`
+      );
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
